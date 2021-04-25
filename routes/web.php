@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BasicController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,5 +25,7 @@ Route::get('starter', function () {
 Route::get('jumbotron', function () {
     return view('view_page.jumbotron');
 });
+
+Route::get('dashboard',[BasicController::class,'dashboard']);
 
 
